@@ -8,7 +8,7 @@ public class ListaUsuario_item extends Lista_item {
 		this.getSeleccionar().setVisible(false);
 		this.getModificar().addClickListener(event->Modificar());
 		
-		// TODO Auto-generated constructor stub
+		 
 	}
 
 	public Modificar _modificar;

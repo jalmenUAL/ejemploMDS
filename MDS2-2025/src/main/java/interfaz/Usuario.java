@@ -8,26 +8,26 @@ import mds2.MainView;
 
 public class Usuario extends UsuarioRegistrado {
 	//
-	//public iUsuario _iUsuario;
+	// public iUsuario _iUsuario;
 	public ListaUsuario _listaUsuario;
 	public ModificarPerfil _modificarPerfil;
-	
-	
-	Usuario(MainView MainView){super(MainView); 
-	this.getModificarperfil().addClickListener(event->ModificarPerfil());
-	ListaUsuario();
+
+	Usuario(MainView MainView) {
+		super(MainView);
+		this.getModificarperfil().addClickListener(event -> ModificarPerfil());
+		ListaUsuario();
 	}
 
 	public void ListaUsuario() {
-		ListaUsuario l = new ListaUsuario(this);	
+		ListaUsuario l = new ListaUsuario(this);
 		this.getContenido().as(VerticalLayout.class).add(l);
 	}
 
 	public void ModificarPerfil() {
-		
+
 		this.MainView.removeAll();
 		ModificarPerfil mp = new ModificarPerfil(this);
 		this.MainView.add(mp);
-		
+
 	}
 }
