@@ -23,7 +23,7 @@ public class login extends VistaLogin {
 					
 				this._cibernauta.MainView.removeAll();
 				
-				if (this.getLogin().getValue()=="usuario") {
+				if (this.getLogin().getValue().equals("usuario")) {
 				Usuario u = new Usuario(this._cibernauta.MainView);
 				this._cibernauta.MainView.add(u);
 				}
